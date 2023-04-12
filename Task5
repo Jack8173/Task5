@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.NetworkInformation;
+using System.Text;
+
+namespace Task5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string name = "Максимов";
+            string surname = "Миша";
+            string hubName;
+
+            Console.WriteLine($"До перестаовки: Имя {name}, Фамилия {surname}");
+
+            hubName = name;
+            name = surname;
+            surname = hubName;
+
+            Console.WriteLine($"После перестаовки: Имя {name}, Фамилия {surname}");
+            Console.ReadKey();
+        }
+    }
+}
